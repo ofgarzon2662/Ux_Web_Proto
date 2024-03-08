@@ -1,0 +1,50 @@
+<div class="position-absolute top-50 start-50 translate-middle">
+  <div class="row pb-3">
+    <div class="col text-center">
+      <img src="assets/Logo.png" class="rounded mx-auto d-block" alt="Logo" style="width: 180px; height: 180px">
+    </div>
+  </div>
+  <div class="mx-auto" style="width: 300px">
+    <div class="row pb-3">
+      <div class="col text-center">
+        <h3 class="mb-0">Iniciar sesión</h3>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col input-group has-validation">
+        <div class="form-floating">
+          <input type="text" autocomplete="new-none" autocomplete="new-none"class="form-control rounded-4" autocomplete="new-identificationNumber"/>
+          <label>Correo electrónico</label>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col input-group has-validation">
+        <div class="form-floating">
+          <input type="password" class="form-control rounded-4"/>
+          <label>Contraseña</label>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col text-end">
+        <a class="link-light" [routerLink]="['/password-reset']">¿Olvido su contraseña?</a>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col">
+        <button type="button" class="btn btn-sm btn-primary rounded-pill w-100" [routerLink]="['/list']">
+          Iniciar sesión
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-sm btn-primary rounded-pill w-100" [routerLink]="['/signup']">
+          Registrarse
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+

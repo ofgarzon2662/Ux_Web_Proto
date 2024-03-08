@@ -1,0 +1,22 @@
+<ng-template #modalCancel let-modal>
+  <div class="modal-header bg-dark text-bg-dark border-bottom-0 text-center">
+    <h1 class="modal-title w-100">Eliminar propietario</h1>
+  </div>
+  <div class="modal-body bg-dark text-bg-dark">
+    <div class="container-fluid ps-0 pe-0">
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">¿Esta seguro que desea cancelar la cita medica de Dermatología del paciente Lalo Landa identificado con<br>CC 1015894712 para el dia 01/01/2025 a las 10:30?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer bg-dark text-bg-dark p-3 border-top-0">
+    <button type="button" class="btn btn-danger btn-sm rounded-pill me-3" (click)="modal.close()">
+      Cancelar
+    </button>
+    <button type="button" class="btn btn-primary btn-sm rounded-pill" (click)="handleCancel()">
+      Confirmar cancelación de la cita médica
+    </button>
+  </div>
+</ng-template>

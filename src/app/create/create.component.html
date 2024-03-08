@@ -1,0 +1,144 @@
+<div class="container position-absolute top-50 start-50 translate-middle">
+  <div class="row pb-3">
+    <div class="col text-center">
+      <h1 class="mb-0">Registrar cita médica</h1>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+      <div class="form-floating">
+        <select class="form-select rounded-4">
+          <option selected></option>
+          <option>CC</option>
+          <option>CE</option>
+          <option>TI</option>
+        </select>
+        <label>Tipo de identificación del paciente</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+        <label>Número de identificación del paciente</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+        <label>Nombre(s) del paciente</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+        <label>Apellido(s) del paciente</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+        <label>Número de contacto del paciente</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+        <label>Correo electrónico del paciente</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+      <div class="form-floating">
+        <select class="form-select rounded-4">
+          <option selected></option>
+          <option>Dermatología</option>
+          <option>Cardiología</option>
+          <option>Oftalmología</option>
+        </select>
+        <label>Especialidad</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-floating">
+        <select class="form-select rounded-4">
+          <option selected></option>
+          <option>Carlos Alberto Malagón</option>
+          <option>Catalina Martinez Rojas</option>
+          <option>Daniel Calderón Roa</option>
+        </select>
+        <label>Médico tratante</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-6">
+      <div class="form-floating">
+        <select class="form-select rounded-4">
+          <option selected></option>
+          <option>Compensar calle 26</option>
+          <option>Compensar calle 145</option>
+          <option>Compensar calle 45</option>
+        </select>
+        <label>Institución médica</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="date" class="form-control rounded-4"/>
+        <label>Fecha</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="time" class="form-control rounded-4"/>
+        <label>Hora</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-sm btn-primary rounded-pill w-100">
+        Buscar fecha y hora más próxima
+      </button>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-6">
+      <div class="form-floating">
+        <textarea class="form-control rounded-4" style="height: 100px"></textarea>
+        <label>Comentarios / Observaciones</label>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-3">
+      <div class="form-floating">
+        <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+        <label>Copago</label>
+      </div>
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+  <div class="row pb-3 justify-content-center">
+    <div class="col-2">
+      <button type="button" class="btn btn-sm btn-danger rounded-pill w-100" [routerLink]="['/list']">
+        Regresar
+      </button>
+    </div>
+    <div class="col-2">
+      <button type="button" class="btn btn-sm btn-primary rounded-pill w-100" (click)="handleCreate()">
+        Guardar cambios
+      </button>
+    </div>
+  </div>
+</div>
