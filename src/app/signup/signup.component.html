@@ -1,0 +1,55 @@
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <div class="row pb-3">
+      <div class="col text-center">
+        <h1 class="mb-0">Registrar usuario</h1>
+      </div>
+    </div>
+    <div class="row pb-3 justify-content-center">
+      <div class="col-3">
+        <div class="form-floating">
+          <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+          <label>Nombres</label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-floating">
+          <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+          <label>Apellidos</label>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3  justify-content-center">
+      <div class="col-6">
+        <div class="form-floating">
+          <input type="text" autocomplete="new-none" class="form-control rounded-4"/>
+          <label>Correo electrónico</label>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3 justify-content-center">
+      <div class="col-3">
+        <div class="form-floating">
+          <input type="password" class="form-control rounded-4"/>
+          <label>Contraseña</label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-floating">
+          <input type="password" class="form-control rounded-4"/>
+          <label>Confirmar contraseña</label>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3 justify-content-center">
+      <div class="col-2">
+        <button type="button" class="btn btn-sm btn-danger rounded-pill w-100" [routerLink]="['/login']">
+          Regresar
+        </button>
+      </div>
+      <div class="col-2">
+        <button type="button" class="btn btn-sm btn-primary rounded-pill w-100" (click)="handleCreate()">
+          Registrarse
+        </button>
+      </div>
+    </div>
+</div>
